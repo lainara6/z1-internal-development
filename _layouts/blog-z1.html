@@ -10,15 +10,8 @@ layout: compress
 
     {{ content }}
 
-    {% if site.tags[page.slug] %}
-    <p>
-        Here be writings, tagged as <b>"{{ page.slug }}"</b>.<br>
-        <small><a href="{{ site.baseurl }}{{ site.Blog }}">Remove filter</a></small>
-    </p>
-
     <ul class="blog-posts">
-        {% for post in site.tags[page.slug] %}
-        {% for tag in post.tags %}
+        {% for post in site.categories.z1 %}
         <li>
             <span>
                 <i>
@@ -30,18 +23,12 @@ layout: compress
             <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         </li>
         {% endfor %}
-        {% endfor %}
 
     </ul>
-    {% else %}
-    <p>
-        There are no posts in {{ page.slug }}.
-    </p>
-    {% endif %}
 
 </main>
 
-{% include footer.html %}
+{% include footer-blog.html %}
 
 </body>
 

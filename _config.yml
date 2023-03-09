@@ -1,15 +1,6 @@
-###########
-# site.title
-
-title: jekyllBear
-description: a minimal, text focused blog theme
-# baseurl: "/jekyllBear" # the subpath of your site, e.g. /blog/
-url: "https://knhash.in/jekyllBear" # the base hostname & protocol for your site
-# host: 0.0.0.0
-
-
-#########################
-# more settings
+title: Z1 Internal Development
+description: Internal iOS distribution for Z1 app.
+url: "https://z1-internal-development.netlify.app"
 
 plugins:
   - jekyll-redirect-from
@@ -28,14 +19,6 @@ compress_html:
   ignore:
     envs: []
 
-# sass:
-#   sass_dir: css
-#   style:    compressed
-
-collections:
-  my_tags:
-    output: true
-    permalink: /tagged/:slug/
 defaults:
   -
     scope:
@@ -44,9 +27,7 @@ defaults:
     values:
       layout: tagged
 
-# baseurl: ""
-permalink: /blog/:slug
-timezone: America/New_York
+timezone: Asia/Phnom_Penh
 future: false
 
 exclude:
@@ -55,13 +36,6 @@ exclude:
 
 exclude: [vendor]
 
-Blog: /blog
+zpoin: /zpoin
 
-# Add general links to site pages here
-links:
-  Resume: /assets/resume.pdf
-  
-
-# Add links for more focus here
-special_links:
-  "Search": https://duckduckgo.com
+z1: /z1
