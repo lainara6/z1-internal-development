@@ -14,13 +14,9 @@ layout: compress
         {% for post in site.categories.zpoin %}
         <li>
             <span>
-                <i>
-                    <time datetime="2022-01-28" pubdate="">
-                        {{ post.date | date: "%b %-d, %Y" }}
-                    </time>
-                </i>
+                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
             </span>
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            {{ post.start-date | date: "%b %-d, %Y" }} - {{ post.end-date | date: "%b %-d, %Y" }}
         </li>
         {% endfor %}
 

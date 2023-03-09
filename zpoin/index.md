@@ -1,6 +1,6 @@
 ---
 layout: blog-zpoin
-title: ZPoin Installation
+title: ZPOIN
 ---
 
 You can find the build by sprint name and ticket number.
